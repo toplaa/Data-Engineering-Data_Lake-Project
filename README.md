@@ -1,4 +1,4 @@
-# Data_Lake-Project_Udacity-
+# Data_Lake-Project-
 
 The purpose of this database is to be able to extract, transform and load  different json files  that are located in different paths. For this project, there are some variables (columns headers )that are in different paths(song_data and log_data), in addition, there is some other information such as the log information that are also in a different path. With a careful study of the table, one was able to identify fact tables and dimension tables that are referenced in order to develop a logical schema. With the ETL , I was able to create relevant tables with the required information and apply the appropriate SELECT statement to transform some of the data.  The table is now a more organised version of the data instead of the different json files that are in different paths, as such the analytical teams can perform further analysis and transformation on the data to meet their different goals. 
 
@@ -9,6 +9,11 @@ It is simple and most widely used in the industry
 It contains one fact table and some other dimension tables that can reference each other
 
 Please Note: I ran this project locally on my personal machine
+
+Scripts:
+dl.cfg contains the configuration of the AWS credentials, bucket paths on AWS and data path on the local machine
+test.ipynb contains the lines of code used as the test environment 
+etl.py contains the final ETL that performs the task
 
 To run the ETL
 $python etl.py
